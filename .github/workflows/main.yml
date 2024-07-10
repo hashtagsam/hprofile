@@ -49,7 +49,7 @@ jobs:
           SONAR_HOST_URL: ${{ secrets.SONAR_URL }} #OPTIONAL
 
   Build_and_publish:
-  needs: Testing # We require Testing job to complete first before this runs
+    needs: Testing # We require Testing job to complete first before this runs
     runs-on: ubuntu-latest
     steps:
       - name: Code checkout
