@@ -1,5 +1,5 @@
 name: Hprofile Actions
-on: workflow_dispatch
+on: [push, workflow_dispatch] # push runs the workflow once there's a committed change in the workflow. workflow_dispatch is the manual trigger
 env:
   AWS_REGION: us-east-1
   ECR_REPOSITORY: githubactionapp
